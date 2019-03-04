@@ -40,7 +40,6 @@
       "resources/icons/**/*",
       "package.json"
     ],
-    "asar": false,
     "directories": {
       "buildResources": "resources",
       "output": "dist"

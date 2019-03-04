@@ -8,10 +8,8 @@ async function get(projectFile) {
 
   return new Promise((resolve, reject) => {
     try {
-      const projectLoaderPath = path.join(
-        __dirname,
-        "../truffle-project-loader",
-        "index.js",
+      const projectLoaderPath = require.resolve(
+        "../truffle-project-loader/index.js",
       );
       const args = [projectLoaderPath, projectFile];
       const options = {
